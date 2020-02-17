@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LesBot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="bg">
+    <header class="menu">
+        <div class="menuwrapper">
+            <div class="logo">
+                <img src="Images/Logo.png" style="height:50px">
+                <a class="whyChat" href="ButWhyAChatbotThough.html" style="font-family: 'Nunito', sans-serif; font-size: 20px; color: black">Why A Chatbot?</a>
+            </div>
+        </div>
+    </header>
+    <div class="title">
+        <h1 class="headermain">The World's First Chatbot Designed for <span class="headeremphasis">Maggie Zhang</span></h1>
+    </div>
+    <div class="LesBotButton">
+        <button type="button" class="collapsible">
+            <p id="BotFunctions">Click here to see what <strong>LesBot</strong> can do</p>
+        </button>
+        <div class="content">
+            <p>
+                You’ll have to interact with him first, but after some asking around you’ll find:
+            </p>
+            <ul class="BotList" style="list-style-type: none">
+                <li><span class="BotListFront">30+</span> Photos </li>
+                <li><span class="BotListFront">10</span> Plans</li>
+                <li><span class="BotListFront">7</span> Reasons</li>
+                <li><span class="BotListFront">6</span> Days</li>
+                <li><span class="BotListFront">5</span> Jokes</li>
+                <li><span class="BotListFront">A Few</span> Surprises</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bot">
+        <p align="center">
+            <iframe src="https://fxo.io/m/gpppwzkd" height="650px" style="border: 5px solid #E5E5E5; width: 45%; border-radius: 10px" allowfullscreen></iframe>
+        </p>
+    </div>
+    <footer class="bottom">
+        <div class="footerwrapper">
+            <div><img src="Images/division.png" style="width: 300px"></div>
+            <p class="disclaimer">
+                <strong>Disclaimer:</strong> LesBot does not represent a change endured over 6 days.
+                Instead, it is a manifestation of change, clarity, love, emptiness, truthfulness,
+                and courage that has been sustained for almost two months.
+            </p>
+        </div>
+    </footer>
+</div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+<audio autoplay="true" loop="true"><source src="Audio/CUGirl.mp3"></audio>
+
+</body>
+</html>

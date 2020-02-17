@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Why?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="menu">
+    <div class="menuwrapper">
+        <div class="logo">
+            <img src="Images/Logo.png" style="height:50px">
+            <a class="whyChat" href="index.html" style="font-family: 'Nunito', sans-serif; font-size: 20px; color: black">Home</a>
+        </div>
+    </div>
+</header>
+<div class="title2">
+    <h1 class="headermain">Why A <span class="headeremphasis">Chatbot</span> ?</h1>
+</div>
+<main class="mainwrapper">
+    <div>
+        <p style="font-weight: 800">As you know very well, sometimes I can be a bullshitter.</p>
+        <p>
+            Whether we’re talking about how I went about elements of our relationship or the times when I’ve fallen asleep with you while in the library,
+            my actions have not always been up to par with my true intentions.
+        </p>
+        <p>
+            Building this was something that I didn’t want to bullshit.
+            It’s something that my body and mind would not let me bullshit.
+            I created this chatbot to not only house my plans, actions, and guides for how I intend to go about rebuilding and growing our
+            relationship, but more importantly, to serve as an embodiment of change.
+        </p>
+        <p style="font-weight: 800">
+            This is my first website* and there is no one else I would rather have created it for.
+        </p>
+        <p style="font-weight: 300; font-style: italic">
+            *something that could not have been accomplished while bullshitting
+        </p>
+    </div>
+</main>
+<div class="LesBotButton">
+    <button type="button" class="collapsible">
+        <p id="BotFunctions">Click to see why I created <strong>LesBot</strong></p>
+    </button>
+    <div class="content" style="font-family: 'Nunito', sans-serif">
+        <p style="font-weight: 600; font-size: 14px">
+            I wanted to create something that would:
+        </p>
+        <ul class="BotList" style="list-style-type: bullet; font-weight: 600; font-size: 16px">
+            <li>Communicate to you the ways I have changed and how serious I am about continuing along this path </li>
+            <br>
+            <li>Express my deepest feelings and thoughts I have about you, us, and what I want our relationship to be</li>
+            <br>
+            <li>Detail to you the action-oriented plans that reinforce my pursuit for continued growth for both myself and our relationship</li>
+            <br>
+            <li>Set a precedent for how I intend to do the right thing the first time for all things we have yet to experience</li>
+            <br>
+            <li>Convey to you that despite knowing I needed to respect your space after Dec 26th, I haven’t gotten over you one bit, but have grown so much since.</li>
+            <br>
+        </ul>
+    </div>
+</div>
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+<script src="https://widget.flowxo.com/embed.js" data-fxo-widget="eyJ0aGVtZSI6IiNjNzAwYWMiLCJ3ZWIiOnsiYm90SWQiOiI1ZTQ2MzJiYTQ0YTk5ZTAwMGU5MjM2ZjIiLCJ0aGVtZSI6IiNjNzAwYWMiLCJsYWJlbCI6Ikxlc0JvdCJ9fQ==" async defer></script>
+</body>
+</html>

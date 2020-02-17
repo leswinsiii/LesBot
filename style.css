@@ -1,0 +1,175 @@
+.headermain {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+.headeremphasis {
+    font-family: 'Nunito', sans-serif;
+    font-weight: black;
+    color: #C000C3;
+}
+
+.menu{
+    background-color: rgba(255, 255, 255, 0.75);
+    height:75px;
+}
+.bottom{
+    height:150px;
+}
+.menuwrapper{
+    width:46%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+}
+
+
+.logo{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    float: right;
+}
+
+
+.title{
+    height: 100px;
+    width: 46%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.LesBotButton{
+    height: 80px;
+    width: 46%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: rgba(190, 232, 255);
+    cursor: pointer;
+    width:100%;
+    padding:0px 25px;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(224, 224, 224, 0.25);
+    display:flex;
+    align-items: center;
+    z-index: 5;
+}
+
+.collapsible:after {
+    /*content: '\02795'; Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    margin-bottom: auto;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    margin-box: 4rem;
+    z-index: 5;
+}
+
+.content {
+    overflow: hidden;
+    z-index: 5;
+}
+
+.active:after {
+    /*content: "\2796"; Unicode character for "minus" sign (-) */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color:  rgba(190, 232, 255, 0.75);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+
+.content {
+    padding: 0px 25px;
+    background-color: rgb(190, 232, 255);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    z-index: 5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(224, 224, 224, 0.25);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.bot{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+
+}
+
+
+.BotListFront{
+    font-weight: 800;
+    font-size: 20px;
+    color: #C000C3;
+}
+
+body {
+    background-image: url('https://i.imgur.com/0YfekFT.jpg');
+    background-size: cover;                      /* <------ */
+    background-repeat: repeat;
+    background-position: center center;              /* optional, center the image */
+}
+
+#BotFunctions{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #828282;
+}
+
+
+.footerwrapper{
+    width:44%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+}
+
+.disclaimer {
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+.mainwrapper{
+    width: 46%;
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+.title2{
+    height: 50px;
+    width: 46%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
